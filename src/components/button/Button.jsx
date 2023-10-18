@@ -4,7 +4,7 @@ import { StyledButton, StyledButtonColor } from "./styles";
 
 
 const Button = ({text , number}) => {
-
+ 
     // Si en la función viene const Button = (props) => {
     // ponemos return <button>{props.text}</button>;
     // return <button className={style["rojo-suave"]}  >{text}:{number}</button>;
