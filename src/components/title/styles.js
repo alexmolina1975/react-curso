@@ -6,4 +6,13 @@ const StyledH1 = styled.h1 `
     font-weight: bold;
 `;
 
-export {StyledH1}
+
+const StyledSupH1 = styled.h1 `
+    font-family: Arial, Helvetica, sans-serif;
+    color: blue;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+`;
+
+export {StyledH1, StyledSupH1}

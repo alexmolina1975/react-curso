@@ -1,9 +1,10 @@
-import { StyledH1 } from "./styles";
+/* eslint-disable no-unused-vars */
+import { StyledH1, StyledSupH1 } from "./styles";
 
-const Title = ({text}) => {
+const TitleSup = ({text}) => {
 
-    return <StyledH1>{text}</StyledH1>;
+    return <StyledSupH1>{text}</StyledSupH1>;
 
 }
 
-export default Title;
+export default TitleSup;

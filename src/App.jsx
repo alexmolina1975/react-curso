@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import Button from './components/button/Button';
 import Subtitle from './components/subtitle/Subtitle';
 import Title from './components/title/Title';
@@ -35,7 +36,12 @@ const App = () => {
 	return (
 		
 		// <> Se pone etiqueta vacia para que devuelva un padre con dos botones
+
+		
 		<>
+
+			{/* Forma de utilizar los estilos globales */}
+			<GlobalStyles></GlobalStyles>
 
 			<DivSup left='450' top='80' textT='NUESTRA PRIMERA APP' textP='Esto es muuuu difícil' ></DivSup>
 

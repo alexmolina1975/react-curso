@@ -10,6 +10,7 @@ const StyledParrafoSup = styled.p `
     font-family: Arial, Helvetica, sans-serif;
     color: black;
     font-weight: bold;
+    text-align:center;
 `;
 
 export {StyledParrafo , StyledParrafoSup}

@@ -5,7 +5,7 @@ const StyledDiv = styled.div  `
     width: 350px;
     position : absolute;
     border-radius: 5px;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.2);
     border-top-width: 3px;
     border-top-style: solid;
     border-top-color: ${(props => props.shadowcolor)};
@@ -17,6 +17,7 @@ const StyledDivSup = styled.div  `
     height: 168px;
     width: 540px;
     position : absolute;
+    border:1px solid black;
     left: ${(props => props.left)}px;
     top: ${(props => props.top)}px;
 `;
