@@ -9,6 +9,8 @@ import { StyledDiv } from './components/capa/styles';
 
 import { GlobalStyles } from './styles/GlobalStyles';
 import DivSup from './components/capa/DivSuperior';
+import ButtonEscucha from './components/button/ButtonEscucha';
+import { useState } from 'react';
 
 // Arrancar npm run dev
 
@@ -31,7 +33,7 @@ import DivSup from './components/capa/DivSuperior';
 //     )
 // };
 
-const App = () => {
+const AppPractica1 = () => {
 
 	return (
 		
@@ -55,5 +57,73 @@ const App = () => {
         </>
     )
 };
+
+// Boton con evento
+const AppEvento = () => {
+	return (
+		<>
+			<ButtonEscucha></ButtonEscucha>
+		</>
+
+	)
+}
+
+
+// Estados
+let n = 0;
+
+const AppEvent = () => {
+
+	// Los nombres: number(estado) y set + estado. Estado SIEMPRE const, no let
+	const [number, setNumber] = useState(0);
+
+	console.log('render')
+	
+	return (
+		<>
+			<h1>{ number }</h1>
+			<button onClick={() => increment(number, setNumber)} > CAMBIA H1 </button>
+			<br></br>
+			<br></br>
+			<button onClick={increment2} > +1 </button>
+		</>
+
+	)
+}
+
+const App = () => {
+
+	// Los nombres: number(estado) y set + estado. Estado SIEMPRE const, no let
+	const [number, setNumber] = useState(0);
+
+	console.log('render')
+	
+	return (
+		<>
+			<h1>{ number }</h1>
+			<button onClick={() => increment(number, setNumber)} > CAMBIA H1 </button>
+			<br></br>
+			<br></br>
+			<button onClick={increment2} > +1 </button>
+		</>
+
+	)
+}
+
+const increment2 = () => {
+	
+	n++;
+	console.log("CONT " + n)
+
+}
+
+
+const increment = (number, setNumber) => {
+	
+	setNumber(number + 1);
+
+}
+
+
 
 export default App;
